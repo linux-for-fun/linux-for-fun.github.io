@@ -1,3 +1,3 @@
 # Linux for Fun
 
-![Linux for Fun book cover](https://linux-for-fun.githib.io/cover.png)
+![Linux for Fun book cover](https://linux-for-fun.github.io/cover.png)
