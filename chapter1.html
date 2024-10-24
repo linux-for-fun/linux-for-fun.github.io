@@ -1,0 +1,480 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1. Login Loop of Doom (But Not Really) · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter2.html" />
+    
+    
+    <link rel="prev" href="introduction.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    0. Welcome to the Chaos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    1. Login Loop of Doom (But Not Really)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter2.html">
+            
+                <a href="chapter2.html">
+            
+                    
+                    2. The Phantom Printer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter3.html">
+            
+                <a href="chapter3.html">
+            
+                    
+                    3. Terminal Games — The Real Ones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chapter4.html">
+            
+                <a href="chapter4.html">
+            
+                    
+                    4. The Talking Terminal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="chapter5.html">
+            
+                <a href="chapter5.html">
+            
+                    
+                    5. Sudon't Do That!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="chapter6.html">
+            
+                <a href="chapter6.html">
+            
+                    
+                    6. Alias Apocalypse
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="chapter7.html">
+            
+                <a href="chapter7.html">
+            
+                    
+                    7. Keyboard Swap Sabotage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="chapter8.html">
+            
+                <a href="chapter8.html">
+            
+                    
+                    8. Bash Roulette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="chapter9.html">
+            
+                <a href="chapter9.html">
+            
+                    
+                    9. Fortune’s Fool*
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="chapter10.html">
+            
+                <a href="chapter10.html">
+            
+                    
+                    10. The Mystery Background
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="chapter11.html">
+            
+                <a href="chapter11.html">
+            
+                    
+                    11. Shell Shenanigans — Fake Error Messages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="chapter12.html">
+            
+                <a href="chapter12.html">
+            
+                    
+                    12. The Final Laugh
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >1. Login Loop of Doom (But Not Really)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="chapter-1-login-loop-of-doom-but-not-really"><strong>Chapter 1: Login Loop of Doom (But Not Really)</strong></h3>
+<p>Oh, the sweet, sweet joy of watching someone attempt to log into their system, only to be greeted with an endless loop of failure! But remember, dear reader, we&#x2019;re not here to break their spirit, just to toy with their patience&#x2014;ever so delicately. Enter the <em>Login Loop of Doom</em>: a harmless prank that will trap your victim in a perpetual cycle of login attempts, making them wonder if they&#x2019;ve stumbled into some twisted tech nightmare. But no fear&#x2014;there&#x2019;s always a way out. The trick is knowing how to set the trap just right.</p>
+<p>Let&#x2019;s begin, shall we?</p>
+<h4 id="the-setup-modifying-bashrc-or-bashprofile"><strong>The Setup: Modifying <code>.bashrc</code> or <code>.bash_profile</code></strong></h4>
+<p>The magic of this prank lies in one of the most innocent and unassuming files on any Linux system: the <code>.bashrc</code> or <code>.bash_profile</code>. These files are automatically executed every time a user logs into their shell. Normally, they&#x2019;re used for setting environment variables, loading aliases, or running startup scripts. But for us? It&#x2019;s the perfect place to lay our little trap.</p>
+<p><strong>Step 1: Access Your Target&#x2019;s Shell Config File</strong></p>
+<p>First, you need access to the user&#x2019;s <code>.bashrc</code> or <code>.bash_profile</code> file. Typically, you&#x2019;ll find these in the user&#x2019;s home directory (<code>/home/username</code>). If you&#x2019;re pranking yourself for practice, it&#x2019;s as simple as running:</p>
+<pre><code class="lang-bash">nano ~/.bashrc
+</code></pre>
+<p>or:</p>
+<pre><code class="lang-bash">nano ~/.bash_profile
+</code></pre>
+<p>(Note: <code>.bashrc</code> is more commonly used in Ubuntu for non-login shells, while <code>.bash_profile</code> gets executed in login shells. But hey, either one will do the trick depending on how your target typically logs in.)</p>
+<p><strong>Step 2: Insert the Login Loop of Doom</strong></p>
+<p>Now, here&#x2019;s where we unleash a bit of chaos. What we want is to prevent the user from ever reaching their terminal by looping them back to the login prompt. A simple way to achieve this is by adding a line that will force an immediate logout every time the <code>.bashrc</code> (or <code>.bash_profile</code>) is executed.</p>
+<p>Here&#x2019;s a neat trick:</p>
+<pre><code class="lang-bash"><span class="hljs-keyword">while</span> <span class="hljs-literal">true</span>; <span class="hljs-keyword">do</span>
+    clear
+    <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Login failed. Please try again.&quot;</span>
+    sleep 1
+<span class="hljs-keyword">done</span>
+</code></pre>
+<p>Add this innocent-looking loop to the bottom of their <code>.bashrc</code> file. This little gem will immediately clear the screen, print an ominous &#x201C;Login failed. Please try again.&#x201D; message, and repeat forever. The user will log in, see this, and&#x2014;just like that&#x2014;get kicked back into oblivion.</p>
+<p><strong>Step 3: Save the File and Exit</strong></p>
+<p>After inserting your diabolical loop, save the file (<code>Ctrl + O</code> to write, <code>Ctrl + X</code> to exit if you&#x2019;re using nano). Now, wait for your unsuspecting victim to log in and be consumed by the loop of doom.</p>
+<h4 id="what-will-they-see"><strong>What Will They See?</strong></h4>
+<p>Now, here&#x2019;s the fun part: What exactly happens when they try to log in? Let me paint you a picture.</p>
+<p>Your victim, blissfully unaware, enters their username and password like they do every day. They&#x2019;re probably thinking about how much work they have to do or, better yet, how everything is going smoothly for once. But then... the screen flashes. Instead of their beautiful command line, they&#x2019;re greeted with:</p>
+<pre><code>Login failed. Please try again.
+</code></pre><p>Huh? Maybe they mistyped their password? They&#x2019;ll try again, of course. Enter password. <em>Boom</em>&#x2014;same message. Now the real fun begins.</p>
+<p>As they start to sweat, they&#x2019;ll try everything: logging out and back in, rebooting the system, maybe even Googling on another device for &#x201C;Ubuntu login issues.&#x201D; Little do they know, the answer is hiding in plain sight&#x2014;right in their <code>.bashrc</code> file.</p>
+<h4 id="giving-them-an-escape-the-secret-exit-key"><strong>Giving Them an Escape: The Secret Exit Key</strong></h4>
+<p>Of course, we&#x2019;re not monsters (well, not <em>total</em> monsters). Every prank should have a way out. Otherwise, where&#x2019;s the fun when they realize it&#x2019;s you behind the madness? Let&#x2019;s give them a chance to escape&#x2014;<em>if</em> they&#x2019;re clever enough to figure it out.</p>
+<p>We can modify our script to include a hidden exit condition. For instance, let&#x2019;s allow them to break the loop if they type a specific word or press a particular key. Something subtle, like a secret code, that only you know about.</p>
+<p>Here&#x2019;s an updated version of the script with a hidden escape key:</p>
+<pre><code class="lang-bash"><span class="hljs-keyword">while</span> <span class="hljs-literal">true</span>; <span class="hljs-keyword">do</span>
+    clear
+    <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Login failed. Please try again.&quot;</span>
+    <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Hint: Say the magic word.&quot;</span>
+    <span class="hljs-built_in">read</span> input
+    <span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$input</span>&quot;</span> == <span class="hljs-string">&quot;letmein&quot;</span> ]; <span class="hljs-keyword">then</span>
+        <span class="hljs-built_in">break</span>
+    <span class="hljs-keyword">fi</span>
+    sleep 1
+<span class="hljs-keyword">done</span>
+</code></pre>
+<p>This version adds a prompt asking the user to &#x201C;Say the magic word.&#x201D; If they happen to type &quot;letmein,&quot; the loop will break, and they&#x2019;ll regain access to their precious terminal. Of course, it&#x2019;s entirely up to you whether you want to give them that hint. Maybe you leave it out entirely for a few hours of extra confusion before revealing the secret!</p>
+<h4 id="how-to-reverse-the-prank"><strong>How to Reverse the Prank</strong></h4>
+<p>Once your victim has suffered long enough, it&#x2019;s time to end the charade and let them back into their system. This part is crucial&#x2014;remember Rule #2: All pranks must be reversible.</p>
+<p>If they haven&#x2019;t figured it out themselves, you can either:</p>
+<ul>
+<li>Log in with an administrator account and remove the prank from their <code>.bashrc</code> file.</li>
+<li>Send them a cryptic message telling them to check their <code>.bashrc</code>.</li>
+<li>Or if you&#x2019;re feeling particularly devilish, wait for them to beg for help!</li>
+</ul>
+<p>To remove the loop, simply access the <code>.bashrc</code> again and delete the lines you added:</p>
+<pre><code class="lang-bash">nano ~/.bashrc
+<span class="hljs-comment"># Remove the loop lines, save, and exit.</span>
+</code></pre>
+<p>Once that&#x2019;s done, everything will return to normal&#x2014;<em>as if nothing ever happened</em>. Ah, the beauty of temporary chaos.</p>
+<h4 id="pro-tips-for-maximum-effect"><strong>Pro Tips for Maximum Effect</strong></h4>
+<p>Want to push this prank to the next level? Oh, I knew you would. Here are a few extra twists you can throw in for extra laughs:</p>
+<ul>
+<li><p><strong>Add Random Messages</strong>: Instead of always showing &#x201C;Login failed. Please try again,&#x201D; mix it up! You can create a variety of random failure messages like, &#x201C;Authentication denied,&#x201D; or &#x201C;Access to root required,&#x201D; or even &#x201C;System compromised!&#x201D; Keep them on their toes, wondering just how bad the situation is.</p>
+</li>
+<li><p><strong>Increase the Delay</strong>: Set the sleep timer to a higher value, so the victim has to wait 5, 10, or even 30 seconds between each failed attempt. The more they have to wait, the more frustrated they&#x2019;ll get, thinking it&#x2019;s a system error.</p>
+</li>
+<li><p><strong>Mess with the Hint</strong>: If you&#x2019;re giving them a hint for the exit word, make it something cryptic or weird, like &#x201C;Only_the_chosen_may_pass&#x201D; or &#x201C;42_is_the_answer&#x201D;. Watch them scratch their heads trying to decode your mind games.</p>
+</li>
+<li><p><strong>Timed Break</strong>: You could set the loop to automatically break after a certain amount of time, giving them a temporary sense of relief&#x2014;before the prank triggers again on their next login.</p>
+</li>
+</ul>
+<h4 id="why-this-works"><strong>Why This Works</strong></h4>
+<p>You see, this prank is a beautiful mix of simplicity and psychological warfare. By using something as basic as a loop in the <code>.bashrc</code> file, you can create an illusion of system failure. Your victim will be stuck in a seemingly endless login loop, convinced that something has gone horribly wrong with their beloved Ubuntu system. And yet, there&#x2019;s no real damage. No files lost. No data corrupted. Just pure, unadulterated confusion.</p>
+<p>Isn&#x2019;t it marvelous?</p>
+<h4 id="in-conclusion"><strong>In Conclusion</strong></h4>
+<p>The Login Loop of Doom is just the start of our journey into the land of Linux pranks. It&#x2019;s subtle, effective, and most importantly&#x2014;reversible. You&#x2019;ve made your victim panic, question their sanity, and hopefully laugh at the absurdity of it all. </p>
+<p>So go on, my fellow trickster, and let chaos reign. The next chapter awaits, where we dive into the magical world of phantom printers. But remember&#x2014;play nice, and always give them a way out. Or not.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page: 0. Welcome to the Chaos">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter2.html" class="navigation navigation-next " aria-label="Next page: 2. The Phantom Printer">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1. Login Loop of Doom (But Not Really)","level":"1.3","depth":1,"next":{"title":"2. The Phantom Printer","level":"1.4","depth":1,"path":"chapter2.md","ref":"chapter2.md","articles":[]},"previous":{"title":"0. Welcome to the Chaos","level":"1.2","depth":1,"path":"introduction.md","ref":"introduction.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1.md","mtime":"2024-10-24T10:10:38.688Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-10-24T10:44:49.165Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

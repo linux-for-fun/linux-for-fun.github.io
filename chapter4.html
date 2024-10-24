@@ -1,0 +1,496 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4. The Talking Terminal · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter5.html" />
+    
+    
+    <link rel="prev" href="chapter3.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    0. Welcome to the Chaos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    1. Login Loop of Doom (But Not Really)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter2.html">
+            
+                <a href="chapter2.html">
+            
+                    
+                    2. The Phantom Printer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter3.html">
+            
+                <a href="chapter3.html">
+            
+                    
+                    3. Terminal Games — The Real Ones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="chapter4.html">
+            
+                <a href="chapter4.html">
+            
+                    
+                    4. The Talking Terminal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="chapter5.html">
+            
+                <a href="chapter5.html">
+            
+                    
+                    5. Sudon't Do That!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="chapter6.html">
+            
+                <a href="chapter6.html">
+            
+                    
+                    6. Alias Apocalypse
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="chapter7.html">
+            
+                <a href="chapter7.html">
+            
+                    
+                    7. Keyboard Swap Sabotage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="chapter8.html">
+            
+                <a href="chapter8.html">
+            
+                    
+                    8. Bash Roulette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="chapter9.html">
+            
+                <a href="chapter9.html">
+            
+                    
+                    9. Fortune’s Fool*
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="chapter10.html">
+            
+                <a href="chapter10.html">
+            
+                    
+                    10. The Mystery Background
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="chapter11.html">
+            
+                <a href="chapter11.html">
+            
+                    
+                    11. Shell Shenanigans — Fake Error Messages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="chapter12.html">
+            
+                <a href="chapter12.html">
+            
+                    
+                    12. The Final Laugh
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >4. The Talking Terminal</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="chapter-4-the-talking-terminal"><strong>Chapter 4: The Talking Terminal</strong></h3>
+<p>You know what&#x2019;s missing from your average, boring Linux terminal? A voice. Oh yes, my friend, let&#x2019;s give the terminal a personality, a way to mock, spook, and confuse its unsuspecting user. Imagine a terminal that suddenly speaks out loud, delivering random, cryptic, or even snarky messages as the user types innocuous commands. The unsuspecting victim will be left wondering whether their system has developed a mind of its own.</p>
+<p>Welcome to the Talking Terminal&#x2014;a harmless but delightfully unsettling prank that uses text-to-speech technology to make the terminal talk back. Let&#x2019;s dive in and breathe some life (or creepiness) into the command line.</p>
+<h4 id="step-1-install-espeak-or-festival"><strong>Step 1: Install <code>espeak</code> or <code>festival</code></strong></h4>
+<p>To get the terminal talking, we&#x2019;ll need a text-to-speech program. <strong><code>espeak</code></strong> is a lightweight option that&#x2019;s perfect for this prank, but you can also use <strong><code>festival</code></strong> for more advanced features. Either way, they&#x2019;ll both do the trick.</p>
+<p>Let&#x2019;s start by installing <code>espeak</code>:</p>
+<pre><code class="lang-bash">sudo apt update
+sudo apt install espeak
+</code></pre>
+<p>If you prefer <code>festival</code>, install it like this:</p>
+<pre><code class="lang-bash">sudo apt install festival
+</code></pre>
+<p>Once installed, both tools allow us to convert text to speech and play it through the system&#x2019;s audio output. Now, we&#x2019;re ready to turn that terminal into a sarcastic, spooky, or just plain weird talking companion.</p>
+<h4 id="step-2-triggering-speech-with-common-commands"><strong>Step 2: Triggering Speech with Common Commands</strong></h4>
+<p>The beauty of this prank is that we can make the terminal speak whenever the user runs a common command. Let&#x2019;s choose a command that the user runs often&#x2014;like <code>ls</code> or <code>cd</code>&#x2014;and make the terminal speak after every execution.</p>
+<p>To do this, we&#x2019;re going to modify their <code>.bashrc</code> file (yes, again), creating aliases for these commands that execute their normal functionality but also run the <code>espeak</code> command to deliver a message.</p>
+<p>Open the <code>.bashrc</code> file for editing:</p>
+<pre><code class="lang-bash">nano ~/.bashrc
+</code></pre>
+<p>Add the following alias for the <code>ls</code> command:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">alias</span> ls=<span class="hljs-string">&apos;ls &amp;&amp; espeak &quot;Looking good, boss!&quot;&apos;</span>
+</code></pre>
+<p>Now, every time the user runs <code>ls</code> to list the contents of a directory, the system will obediently show the files but will also speak the message &#x201C;Looking good, boss!&#x201D; through the speakers. It&#x2019;s a harmless but funny surprise, and the more the user runs <code>ls</code>, the more they&#x2019;ll hear the terminal talking to them.</p>
+<h4 id="step-3-adding-random-messages"><strong>Step 3: Adding Random Messages</strong></h4>
+<p>Of course, we don&#x2019;t want the terminal to say the same thing every time&#x2014;that would get boring quickly. No, we need to add a little randomness to keep the confusion alive. We&#x2019;ll create an array of possible messages, and each time the user runs a command, the system will randomly select one to speak.</p>
+<p>Here&#x2019;s an example of how to modify the <code>ls</code> command to deliver random speech:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">alias</span> ls=<span class="hljs-string">&apos;ls &amp;&amp; phrases=(&quot;Looking good, boss!&quot; &quot;Why are you always listing stuff?&quot; &quot;Are you lost, human?&quot; &quot;I see dead files...&quot;) &amp;&amp; espeak &quot;${phrases[$RANDOM % ${#phrases[@]}]}&quot;&apos;</span>
+</code></pre>
+<p>Now, when the user runs <code>ls</code>, the terminal will randomly select from a list of phrases, adding a delightful element of unpredictability. Sometimes it will compliment them, sometimes it will be snarky, and sometimes it will just confuse them.</p>
+<h4 id="step-4-expanding-the-prank-to-other-commands"><strong>Step 4: Expanding the Prank to Other Commands</strong></h4>
+<p>Why stop at <code>ls</code>? Let&#x2019;s make the terminal talk back for other common commands like <code>cd</code>, <code>pwd</code>, or even <code>sudo</code>. Here are a few more examples:</p>
+<p>For <code>cd</code> (changing directories):</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">alias</span> <span class="hljs-built_in">cd</span>=<span class="hljs-string">&apos;cd &amp;&amp; espeak &quot;Where do you think you&#x2019;re going?&quot;&apos;</span>
+</code></pre>
+<p>For <code>sudo</code> (when they&#x2019;re running something with admin privileges):</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">alias</span> sudo=<span class="hljs-string">&apos;sudo &amp;&amp; espeak &quot;Oh, you think you&#x2019;re in charge now?&quot;&apos;</span>
+</code></pre>
+<p>For <code>pwd</code> (printing the current directory):</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">alias</span> <span class="hljs-built_in">pwd</span>=<span class="hljs-string">&apos;pwd &amp;&amp; espeak &quot;You are here. But where is here, really?&quot;&apos;</span>
+</code></pre>
+<p>These aliases will give the impression that the system is paying attention to everything the user does and can&#x2019;t help but make snarky comments along the way. The more the user interacts with their terminal, the more bizarre and hilarious the experience will become.</p>
+<h4 id="step-5-using-zenity-for-pop-up-messages"><strong>Step 5: Using <code>zenity</code> for Pop-Up Messages</strong></h4>
+<p>If you want to take this prank a step further, you can combine the voice with visual pop-up messages using <code>zenity</code>, a tool that creates simple graphical dialog boxes. This way, the terminal can not only speak but also display ominous or absurd messages on the screen.</p>
+<p>Start by installing <code>zenity</code>:</p>
+<pre><code class="lang-bash">sudo apt install zenity
+</code></pre>
+<p>Now, let&#x2019;s add a pop-up message to one of our aliases. Here&#x2019;s an example that combines speech and a pop-up when the user runs <code>ls</code>:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">alias</span> ls=<span class="hljs-string">&apos;ls &amp;&amp; espeak &quot;What are you looking for?&quot; &amp;&amp; zenity --info --text=&quot;Did you really think you&#x2019;d find it here?&quot;&apos;</span>
+</code></pre>
+<p>Now, every time the user runs <code>ls</code>, the system will say, &#x201C;What are you looking for?&#x201D; and then display a pop-up message that reads, &#x201C;Did you really think you&#x2019;d find it here?&#x201D; This adds a whole new layer of confusion and entertainment to the prank.</p>
+<h4 id="step-6-the-creepy-factor&#x2014;using-timed-messages"><strong>Step 6: The Creepy Factor&#x2014;Using Timed Messages</strong></h4>
+<p>Want to really freak someone out? Set up the terminal to deliver random spoken messages at timed intervals, even when the user isn&#x2019;t actively typing commands. Imagine the user sitting quietly, working away, when suddenly their terminal blurts out, &#x201C;I&#x2019;m watching you...&#x201D; at random. Spooky, right?</p>
+<p>We can use <code>cron</code> to schedule random speech at odd intervals. Here&#x2019;s how to set up a cron job that runs every 15 minutes and speaks a creepy message:</p>
+<pre><code class="lang-bash">crontab <span class="hljs-_">-e</span>
+</code></pre>
+<p>Add the following line:</p>
+<pre><code class="lang-bash">*/15 * * * * espeak <span class="hljs-string">&quot;I&#x2019;m watching you...&quot;</span>
+</code></pre>
+<p>Now, every 15 minutes, the terminal will speak this eerie message, whether the user is actively working in the terminal or not. You can, of course, replace this with any message you like, depending on how freaked out you want them to be.</p>
+<h4 id="step-7-disabling-the-prank"><strong>Step 7: Disabling the Prank</strong></h4>
+<p>As always, every good prank should be reversible. To disable the talking terminal, simply remove the aliases from the <code>.bashrc</code> file and restore the original functionality of the commands. Here&#x2019;s how:</p>
+<ol>
+<li>Open the <code>.bashrc</code> file:</li>
+</ol>
+<pre><code class="lang-bash">nano ~/.bashrc
+</code></pre>
+<ol>
+<li><p>Remove the lines where you added the aliases for <code>ls</code>, <code>cd</code>, <code>sudo</code>, etc.</p>
+</li>
+<li><p>Save and exit the file, then reload the <code>.bashrc</code>:</p>
+</li>
+</ol>
+<pre><code class="lang-bash"><span class="hljs-built_in">source</span> ~/.bashrc
+</code></pre>
+<p>If you&#x2019;ve set up a cron job for timed messages, don&#x2019;t forget to remove that as well by editing the crontab:</p>
+<pre><code class="lang-bash">crontab <span class="hljs-_">-e</span>
+<span class="hljs-comment"># Remove the espeak cron job</span>
+</code></pre>
+<p>Once these steps are complete, the system will return to its normal, silent self&#x2014;no more talking back.</p>
+<h4 id="pro-tips-for-maximum-effect"><strong>Pro Tips for Maximum Effect</strong></h4>
+<p>Want to push this prank to its full potential? Here are a few additional ideas:</p>
+<ul>
+<li><p><strong>Customize the Messages</strong>: Personalize the speech messages based on the target&#x2019;s name, habits, or even their job. Imagine the terminal saying, &#x201C;Oh, working late again, John?&#x201D; or &#x201C;I see you&#x2019;ve been typing that same command for a while. Need help?&#x201D;</p>
+</li>
+<li><p><strong>Random Intervals</strong>: For an extra creepy effect, set the speech to happen at completely random intervals, so the user never knows when the terminal will start talking. Use a cron job with a <code>sleep</code> command to create random timing.</p>
+</li>
+<li><p><strong>Combine with Sound Effects</strong>: Use system sounds or the <code>aplay</code> command to play random beeps, chimes, or ominous music whenever a certain command is run. This will add a whole new level of atmosphere to the prank.</p>
+</li>
+</ul>
+<h4 id="why-this-works"><strong>Why This Works</strong></h4>
+<p>The Talking Terminal prank taps into a deep-seated fear many people have: that their machines are watching them. By turning the terminal into a talking, responsive entity, you can create a sense of unease and confusion. But because it&#x2019;s all lighthearted and easily reversible, the victim will eventually laugh it off&#x2014;once they stop jumping every time the terminal speaks, that is.</p>
+<h4 id="in-conclusion"><strong>In Conclusion</strong></h4>
+<p>The Talking Terminal prank is a perfect blend of technical know-how and playful trickery. It&#x2019;s simple to set up, endlessly customizable, and guaranteed to confuse your target. Whether you go for funny, creepy, or just plain weird, this prank will leave your victim wondering what the heck is going on with their terminal.</p>
+<p>Next up, we&#x2019;ll dive into the world of sudo with <strong>Chapter 5: Sudon&apos;t Do That!</strong>&#x2014;a guide to messing with everyone&#x2019;s favorite command: <code>sudo</code>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter3.html" class="navigation navigation-prev " aria-label="Previous page: 3. Terminal Games — The Real Ones">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter5.html" class="navigation navigation-next " aria-label="Next page: 5. Sudon't Do That!">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4. The Talking Terminal","level":"1.6","depth":1,"next":{"title":"5. Sudon't Do That!","level":"1.7","depth":1,"path":"chapter5.md","ref":"chapter5.md","articles":[]},"previous":{"title":"3. Terminal Games — The Real Ones","level":"1.5","depth":1,"path":"chapter3.md","ref":"chapter3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter4.md","mtime":"2024-10-24T10:26:08.320Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-10-24T10:44:49.165Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

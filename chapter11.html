@@ -1,0 +1,539 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>11. Shell Shenanigans — Fake Error Messages · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter12.html" />
+    
+    
+    <link rel="prev" href="chapter10.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    0. Welcome to the Chaos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    1. Login Loop of Doom (But Not Really)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter2.html">
+            
+                <a href="chapter2.html">
+            
+                    
+                    2. The Phantom Printer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter3.html">
+            
+                <a href="chapter3.html">
+            
+                    
+                    3. Terminal Games — The Real Ones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chapter4.html">
+            
+                <a href="chapter4.html">
+            
+                    
+                    4. The Talking Terminal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="chapter5.html">
+            
+                <a href="chapter5.html">
+            
+                    
+                    5. Sudon't Do That!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="chapter6.html">
+            
+                <a href="chapter6.html">
+            
+                    
+                    6. Alias Apocalypse
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="chapter7.html">
+            
+                <a href="chapter7.html">
+            
+                    
+                    7. Keyboard Swap Sabotage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="chapter8.html">
+            
+                <a href="chapter8.html">
+            
+                    
+                    8. Bash Roulette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="chapter9.html">
+            
+                <a href="chapter9.html">
+            
+                    
+                    9. Fortune’s Fool*
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="chapter10.html">
+            
+                <a href="chapter10.html">
+            
+                    
+                    10. The Mystery Background
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="chapter11.html">
+            
+                <a href="chapter11.html">
+            
+                    
+                    11. Shell Shenanigans — Fake Error Messages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="chapter12.html">
+            
+                <a href="chapter12.html">
+            
+                    
+                    12. The Final Laugh
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >11. Shell Shenanigans — Fake Error Messages</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="chapter-11-shell-shenanigans&#x2014;fake-error-messages"><strong>Chapter 11: Shell Shenanigans&#x2014;Fake Error Messages</strong></h3>
+<p>Nothing sends chills down the spine of an unsuspecting user like the sight of an ominous error message. Imagine the horror as they type a harmless command, only to be greeted by a cryptic warning about &quot;system failure,&quot; &quot;critical file corruption,&quot; or &quot;data loss.&quot; Of course, it&#x2019;s all fake&#x2014;just a cleverly placed prank designed to stir up confusion and anxiety.</p>
+<p>In <strong>Shell Shenanigans</strong>, we&#x2019;ll explore how to create convincing, fake error messages that will make your victim think their system is on the verge of collapse. These messages won&#x2019;t do any real harm, but they&#x2019;ll certainly make your target sweat.</p>
+<h4 id="step-1-crafting-the-fake-error-messages"><strong>Step 1: Crafting the Fake Error Messages</strong></h4>
+<p>The easiest way to create fake error messages is by using simple <code>echo</code> commands combined with strategically placed conditions in their <code>.bashrc</code> file. Let&#x2019;s start by creating some basic error messages that will appear randomly when the user runs common commands.</p>
+<p>Open the <code>.bashrc</code> file:</p>
+<pre><code class="lang-bash">nano ~/.bashrc
+</code></pre>
+<p>Add the following line to create an alias for <code>ls</code> that occasionally prints a fake error message:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">alias</span> ls=<span class="hljs-string">&apos;[ $((RANDOM % 5)) -eq 0 ] &amp;&amp; echo &quot;ERROR: Filesystem corruption detected. Running fsck...&quot; &amp;&amp; sleep 2 || ls&apos;</span>
+</code></pre>
+<p>This command gives a 1 in 5 chance that every time the user runs <code>ls</code>, they&#x2019;ll see a scary message like:</p>
+<pre><code>ERROR: Filesystem corruption detected. Running fsck...
+</code></pre><p>The system will pause for two seconds (to make the error seem more real) and then run the <code>ls</code> command normally. The user will be left wondering whether something serious is happening to their system.</p>
+<h4 id="step-2-creating-more-convincing-errors"><strong>Step 2: Creating More Convincing Errors</strong></h4>
+<p>Let&#x2019;s add some more complexity to make the error messages look even more realistic. We can add multi-line messages, delays, and even fake progress bars to give the impression that the system is trying to fix the problem.</p>
+<p>Here&#x2019;s how to modify the alias to make the error message more dramatic:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">alias</span> ls=<span class="hljs-string">&apos;[ $((RANDOM % 5)) -eq 0 ] &amp;&amp; echo -e &quot;ERROR: Critical filesystem failure.\nAttempting automatic recovery...&quot; &amp;&amp; sleep 3 &amp;&amp; echo &quot;[####        ] 40% complete&quot; &amp;&amp; sleep 2 &amp;&amp; echo &quot;[##########  ] 80% complete&quot; &amp;&amp; sleep 2 &amp;&amp; echo &quot;Recovery successful.&quot; &amp;&amp; ls || ls&apos;</span>
+</code></pre>
+<p>Now, when the fake error triggers, the user will see something like this:</p>
+<pre><code>ERROR: Critical filesystem failure.
+Attempting automatic recovery...
+[####        ] 40% complete
+[##########  ] 80% complete
+Recovery successful.
+</code></pre><p>This will leave them panicked at first, but then relieved when they see the &#x201C;recovery&#x201D; was &#x201C;successful.&#x201D; The trick is to make the error look just plausible enough that they won&#x2019;t immediately think it&#x2019;s a prank.</p>
+<h4 id="step-3-introducing-random-fake-errors-across-commands"><strong>Step 3: Introducing Random Fake Errors Across Commands</strong></h4>
+<p>To make this prank more effective, we should target multiple commands. The more frequently the user encounters fake errors, the more paranoid they&#x2019;ll become. Let&#x2019;s add some fake errors to common commands like <code>cd</code>, <code>rm</code>, and <code>sudo</code>.</p>
+<p>Here&#x2019;s how to modify <code>cd</code> with a fake error message:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">alias</span> <span class="hljs-built_in">cd</span>=<span class="hljs-string">&apos;[ $((RANDOM % 4)) -eq 0 ] &amp;&amp; echo &quot;ERROR: Directory access denied. Possible disk corruption.&quot; &amp;&amp; sleep 2 || cd&apos;</span>
+</code></pre>
+<p>For <code>rm</code>, we can make it even scarier by suggesting that the system is deleting critical files:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">alias</span> rm=<span class="hljs-string">&apos;[ $((RANDOM % 4)) -eq 0 ] &amp;&amp; echo &quot;WARNING: Attempting to remove system files. This action cannot be undone.&quot; &amp;&amp; sleep 2 || rm&apos;</span>
+</code></pre>
+<p>And for <code>sudo</code>, let&#x2019;s make the terminal seem like it&#x2019;s denying superuser privileges:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">alias</span> sudo=<span class="hljs-string">&apos;[ $((RANDOM % 4)) -eq 0 ] &amp;&amp; echo &quot;ERROR: Insufficient permissions to execute command. Contact system administrator.&quot; &amp;&amp; sleep 2 || sudo&apos;</span>
+</code></pre>
+<p>With these modifications, your victim will encounter random fake errors across multiple commands, increasing their confusion and making the prank more believable.</p>
+<h4 id="step-4-making-the-errors-interactive-with-zenity"><strong>Step 4: Making the Errors Interactive with <code>zenity</code></strong></h4>
+<p>For an extra layer of confusion, we can make use of <strong><code>zenity</code></strong>, a tool that allows us to create graphical pop-up messages from the command line. This is particularly effective because most users don&#x2019;t expect graphical errors to come from terminal commands.</p>
+<p>First, install <code>zenity</code>:</p>
+<pre><code class="lang-bash">sudo apt install zenity
+</code></pre>
+<p>Now, let&#x2019;s add some pop-up error messages to our prank. We&#x2019;ll modify the <code>ls</code> command to show a pop-up error before displaying the normal output:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">alias</span> ls=<span class="hljs-string">&apos;[ $((RANDOM % 5)) -eq 0 ] &amp;&amp; zenity --error --text=&quot;Critical error: Filesystem corruption detected.&quot; &amp;&amp; sleep 2 &amp;&amp; ls || ls&apos;</span>
+</code></pre>
+<p>With this alias, the user will get a graphical pop-up that looks like a real system error. They&#x2019;ll be forced to click &#x201C;OK&#x201D; before the normal <code>ls</code> output appears. This combination of graphical and terminal-based errors will make the prank seem even more authentic.</p>
+<h4 id="step-5-the-ultimate-fake-error&#x2014;kernel-panic"><strong>Step 5: The Ultimate Fake Error&#x2014;Kernel Panic</strong></h4>
+<p>If you really want to push the victim over the edge, you can simulate a fake kernel panic. This is the Linux equivalent of the Blue Screen of Death, and seeing it will send any user into a panic. Thankfully, we can simulate one using a clever script.</p>
+<p>First, create a new script called <code>fake_kernel_panic.sh</code>:</p>
+<pre><code class="lang-bash">nano ~/fake_kernel_panic.sh
+</code></pre>
+<p>Here&#x2019;s what the script should look like:</p>
+<pre><code class="lang-bash"><span class="hljs-meta">#!/bin/bash
+</span>
+<span class="hljs-comment"># Clear the screen to simulate a full-screen panic</span>
+clear
+
+<span class="hljs-comment"># Display the fake kernel panic message</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Kernel panic - not syncing: Fatal exception&quot;</span>
+sleep 1
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;CPU: 0 PID: 1 Comm: init Not tainted 5.4.0-42-generic #46~18.04.1-Ubuntu&quot;</span>
+sleep 1
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Hardware name: Fake Machine Model (Fake CPU, Genuine Linux)&quot;</span>
+sleep 1
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;[  0.000000] Call Trace:&quot;</span>
+sleep 1
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;[  0.000001] Kernel panic - not syncing: Fatal exception&quot;</span>
+sleep 1
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;[  0.000002] Rebooting in 10 seconds...&quot;</span>
+sleep 10
+
+<span class="hljs-comment"># Exit the fake panic</span>
+clear
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Panic resolved. System recovered.&quot;</span>
+</code></pre>
+<p>Make the script executable:</p>
+<pre><code class="lang-bash">chmod +x ~/fake_kernel_panic.sh
+</code></pre>
+<p>You can trigger this fake kernel panic randomly by adding it to a command like <code>sudo</code>:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">alias</span> sudo=<span class="hljs-string">&apos;[ $((RANDOM % 10)) -eq 0 ] &amp;&amp; ~/fake_kernel_panic.sh || sudo&apos;</span>
+</code></pre>
+<p>Now, every so often, running <code>sudo</code> will trigger this fake kernel panic, making the user believe their system has crashed. After 10 seconds, the &#x201C;panic&#x201D; will resolve itself, leaving the user wondering what just happened.</p>
+<h4 id="step-6-making-it-even-more-realistic-with-dmesg"><strong>Step 6: Making It Even More Realistic with <code>dmesg</code></strong></h4>
+<p>To add even more authenticity to your fake errors, you can pipe fake log messages into <code>dmesg</code>, the command that shows kernel and system logs. Users often check <code>dmesg</code> when they see errors, so why not fill it with fake error messages?</p>
+<p>First, create a script that injects fake logs into <code>dmesg</code>:</p>
+<pre><code class="lang-bash">nano ~/fake_dmesg.sh
+</code></pre>
+<p>Add the following lines to simulate system errors:</p>
+<pre><code class="lang-bash"><span class="hljs-meta">#!/bin/bash
+</span>
+<span class="hljs-comment"># Inject fake error messages into dmesg</span>
+dmesg -n1
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;[  0.000001] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #2: comm bash: reading directory lblock 0&quot;</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;[  0.000002] EXT4-fs (sda1): Remounting filesystem read-only&quot;</span>
+</code></pre>
+<p>Make it executable:</p>
+<pre><code class="lang-bash">chmod +x ~/fake_dmesg.sh
+</code></pre>
+<p>Now, you can trigger this fake log injection from any command, like so:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">alias</span> <span class="hljs-built_in">cd</span>=<span class="hljs-string">&apos;[ $((RANDOM % 5)) -eq 0 ] &amp;&amp; ~/fake_dmesg.sh &amp;&amp; cd || cd&apos;</span>
+</code></pre>
+<p>Whenever the alias is triggered, the fake log messages will be injected into <code>dmesg</code>, making it seem like there&#x2019;s a real system issue happening. If your victim checks <code>dmesg</code> for more information, they&#x2019;ll see these convincing error logs.</p>
+<h4 id="step-7-disabling-the-fake-errors"><strong>Step 7: Disabling the Fake Errors</strong></h4>
+<p>As always, once the prank has run its course, you&#x2019;ll want to leave your victim a way to disable the fake errors and return to normal. They can do this by removing the aliases from the <code>.bashrc</code> file.</p>
+<p>To disable the fake errors:</p>
+<ol>
+<li>Open the <code>.bashrc</code> file:</li>
+</ol>
+<pre><code class="lang-bash">nano ~/.bashrc
+</code></pre>
+<ol>
+<li><p>Remove or comment out the alias lines that contain the fake errors.</p>
+</li>
+<li><p>Save the file and reload the <code>.bashrc</code>:</p>
+</li>
+</ol>
+<pre><code class="lang-bash"><span class="hljs-built_in">source</span> ~/.bashrc
+</code></pre>
+<p>Once the aliases are removed, the system will return to its normal, error-free state&#x2014;though your victim will likely be on edge for a while longer, wondering if the errors will return.</p>
+<h4 id="step-8-making-it-even-more-evil"><strong>Step 8: Making It Even More Evil</strong></h4>
+<p>If you want to push the prank to its limits, here are some extra ideas:</p>
+<ul>
+<li>**Gradual Esc</li>
+</ul>
+<p>alation**: Start with small, harmless fake errors and gradually increase the intensity and frequency. Begin with small warnings, then escalate to kernel panics and filesystem corruption messages.</p>
+<ul>
+<li><p><strong>Timed Pranks</strong>: Use <code>cron</code> to trigger fake errors at specific times of day, making it seem like the errors are tied to specific system processes or events.</p>
+</li>
+<li><p><strong>Interactive Errors</strong>: Use <code>zenity</code> to create interactive error messages that force the user to click buttons like &#x201C;Retry&#x201D; or &#x201C;Abort,&#x201D; even though neither option makes a difference.</p>
+</li>
+</ul>
+<h4 id="why-this-works"><strong>Why This Works</strong></h4>
+<p>The <strong>Shell Shenanigans&#x2014;Fake Error Messages</strong> prank works because it plays on the user&#x2019;s trust in the system. Error messages are usually serious, and seeing them pop up unexpectedly creates a sense of panic and urgency. By making the errors look real and introducing randomness, you keep the victim on edge, wondering whether their system is about to break.</p>
+<h4 id="in-conclusion"><strong>In Conclusion</strong></h4>
+<p><strong>Shell Shenanigans</strong> is a highly effective prank that preys on the user&#x2019;s trust in their system. By creating realistic, fake error messages, you can send your victim into a spiral of confusion, frustration, and maybe even panic&#x2014;all without causing any real harm. Just remember to reverse the prank when the fun is over, and enjoy watching your victim squirm in the meantime.</p>
+<p>Next up, we&#x2019;ll wrap things up with <strong>Chapter 12: The Final Laugh</strong>, where we review the best pranks from the book and explore how to safely reset everything when the prank war finally comes to an end.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter10.html" class="navigation navigation-prev " aria-label="Previous page: 10. The Mystery Background">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter12.html" class="navigation navigation-next " aria-label="Next page: 12. The Final Laugh">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"11. Shell Shenanigans — Fake Error Messages","level":"1.13","depth":1,"next":{"title":"12. The Final Laugh","level":"1.14","depth":1,"path":"chapter12.md","ref":"chapter12.md","articles":[]},"previous":{"title":"10. The Mystery Background","level":"1.12","depth":1,"path":"chapter10.md","ref":"chapter10.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter11.md","mtime":"2024-10-24T10:43:29.388Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-10-24T10:44:49.165Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

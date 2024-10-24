@@ -1,0 +1,524 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>7. Keyboard Swap Sabotage · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter8.html" />
+    
+    
+    <link rel="prev" href="chapter6.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    0. Welcome to the Chaos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    1. Login Loop of Doom (But Not Really)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter2.html">
+            
+                <a href="chapter2.html">
+            
+                    
+                    2. The Phantom Printer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter3.html">
+            
+                <a href="chapter3.html">
+            
+                    
+                    3. Terminal Games — The Real Ones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chapter4.html">
+            
+                <a href="chapter4.html">
+            
+                    
+                    4. The Talking Terminal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="chapter5.html">
+            
+                <a href="chapter5.html">
+            
+                    
+                    5. Sudon't Do That!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="chapter6.html">
+            
+                <a href="chapter6.html">
+            
+                    
+                    6. Alias Apocalypse
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="chapter7.html">
+            
+                <a href="chapter7.html">
+            
+                    
+                    7. Keyboard Swap Sabotage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="chapter8.html">
+            
+                <a href="chapter8.html">
+            
+                    
+                    8. Bash Roulette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="chapter9.html">
+            
+                <a href="chapter9.html">
+            
+                    
+                    9. Fortune’s Fool*
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="chapter10.html">
+            
+                <a href="chapter10.html">
+            
+                    
+                    10. The Mystery Background
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="chapter11.html">
+            
+                <a href="chapter11.html">
+            
+                    
+                    11. Shell Shenanigans — Fake Error Messages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="chapter12.html">
+            
+                <a href="chapter12.html">
+            
+                    
+                    12. The Final Laugh
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >7. Keyboard Swap Sabotage</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="chapter-7-keyboard-swap-sabotage"><strong>Chapter 7: Keyboard Swap Sabotage</strong></h3>
+<p>Ah, the keyboard&#x2014;our trusty companion, the interface between the mind and the machine. What if we twisted that relationship? Imagine your unsuspecting victim sitting down to type, only to find that every keystroke betrays them. Their carefully composed commands turn into gibberish, their typing skills suddenly crumble, and they begin to question if they&apos;ve somehow forgotten how to use a keyboard. Welcome to <strong>Keyboard Swap Sabotage</strong>, where we will reassign and swap keys to make your target&apos;s typing experience a living nightmare.</p>
+<h4 id="step-1-using-xmodmap-to-reassign-keys"><strong>Step 1: Using <code>xmodmap</code> to Reassign Keys</strong></h4>
+<p>The key to this prank (pun intended) is <strong><code>xmodmap</code></strong>, a utility for modifying keymaps and pointer button mappings in X11 systems. By using <code>xmodmap</code>, we can change the behavior of specific keys&#x2014;swapping them, disabling them, or reassigning them to something completely different.</p>
+<p>First, let&#x2019;s check if <code>xmodmap</code> is installed. Most systems will have it by default, but if not, install it using:</p>
+<pre><code class="lang-bash">sudo apt install x11-xserver-utils
+</code></pre>
+<p>Now, let&#x2019;s begin the sabotage.</p>
+<h4 id="step-2-swapping-common-keys"><strong>Step 2: Swapping Common Keys</strong></h4>
+<p>For the simplest prank, we&#x2019;ll swap some of the most commonly used keys. Let&apos;s start with <code>A</code> and <code>S</code>, two keys that are close together and frequently used in commands and text. Swapping them will lead to a confusing mess of misspelled words and botched commands.</p>
+<p>First, find the keycodes for these keys. You can do this by running:</p>
+<pre><code class="lang-bash">xmodmap -pk | grep -i <span class="hljs-string">&quot;a&quot;</span>
+</code></pre>
+<p>You&#x2019;ll get something like this:</p>
+<pre><code>38  A (0x61)  S (0x73)
+</code></pre><p>Take note of the keycodes (in this case, <code>38</code> for <code>A</code> and <code>39</code> for <code>S</code>).</p>
+<p>Now, create a new <code>xmodmap</code> file to swap these keys. Open a file called <code>swap_keys.map</code>:</p>
+<pre><code class="lang-bash">nano ~/swap_keys.map
+</code></pre>
+<p>Inside this file, add the following lines:</p>
+<pre><code class="lang-bash">keycode 38 = S
+keycode 39 = A
+</code></pre>
+<p>Save and exit the file. Now, apply the key swap:</p>
+<pre><code class="lang-bash">xmodmap ~/swap_keys.map
+</code></pre>
+<p>Voil&#xE0;! The <code>A</code> and <code>S</code> keys have been swapped. Your target will start typing, only to realize that every attempt to type an &quot;A&quot; results in an &quot;S&quot;, and vice versa. The chaos begins.</p>
+<h4 id="step-3-making-it-persistent-with-bashrc"><strong>Step 3: Making It Persistent with <code>.bashrc</code></strong></h4>
+<p>Of course, you&#x2019;ll want this prank to persist beyond just one session. To ensure that the key swap is applied every time the user logs in, we&#x2019;ll add the <code>xmodmap</code> command to their <code>.bashrc</code> file.</p>
+<p>Open the <code>.bashrc</code> file:</p>
+<pre><code class="lang-bash">nano ~/.bashrc
+</code></pre>
+<p>Add the following line at the end of the file:</p>
+<pre><code class="lang-bash">xmodmap ~/swap_keys.map
+</code></pre>
+<p>Now, every time the user logs in, their keyboard will be sabotaged with the swapped keys. Perfect for prolonged confusion!</p>
+<h4 id="step-4-swapping-more-keys-for-maximum-confusion"><strong>Step 4: Swapping More Keys for Maximum Confusion</strong></h4>
+<p>Let&#x2019;s not stop with just two keys&#x2014;let&#x2019;s swap a few more for extra chaos. Here are some fun combinations to mess with:</p>
+<ul>
+<li>Swap <code>W</code> and <code>E</code> for even more typing frustration.</li>
+<li>Swap the <code>Enter</code> key with the <code>Backspace</code> key, turning every attempt to submit a command into a deletion.</li>
+<li>Swap <code>Left</code> and <code>Right</code> arrow keys, causing endless navigation woes.</li>
+</ul>
+<p>Here&#x2019;s how to add these swaps to the <code>xmodmap</code> file:</p>
+<pre><code class="lang-bash">keycode 38 = S  <span class="hljs-comment"># A -&gt; S</span>
+keycode 39 = A  <span class="hljs-comment"># S -&gt; A</span>
+keycode 25 = E  <span class="hljs-comment"># W -&gt; E</span>
+keycode 26 = W  <span class="hljs-comment"># E -&gt; W</span>
+keycode 36 = BackSpace  <span class="hljs-comment"># Enter -&gt; BackSpace</span>
+keycode 22 = Return  <span class="hljs-comment"># BackSpace -&gt; Enter</span>
+keycode 113 = Left  <span class="hljs-comment"># Right arrow -&gt; Left arrow</span>
+keycode 114 = Right  <span class="hljs-comment"># Left arrow -&gt; Right arrow</span>
+</code></pre>
+<p>Once you&#x2019;ve saved this modified <code>swap_keys.map</code> file, run the <code>xmodmap</code> command again:</p>
+<pre><code class="lang-bash">xmodmap ~/swap_keys.map
+</code></pre>
+<p>Now, typing, navigating, and submitting commands will become a disorienting nightmare of mixed-up keys. Your victim will find themselves constantly correcting errors, moving in the wrong direction, and battling with their own keyboard.</p>
+<h4 id="step-5-disabling-keys-completely"><strong>Step 5: Disabling Keys Completely</strong></h4>
+<p>If swapping keys isn&#x2019;t enough, let&#x2019;s go one step further&#x2014;disabling a key entirely. Maybe the victim&#x2019;s <code>Ctrl</code> key mysteriously stops working, or the <code>Escape</code> key refuses to do its job. This can be particularly frustrating when they try to use common keyboard shortcuts.</p>
+<p>To disable a key, simply map it to <code>NoSymbol</code> in the <code>xmodmap</code> file. For example, to disable the <code>Escape</code> key (keycode <code>9</code>), add this to your <code>swap_keys.map</code> file:</p>
+<pre><code class="lang-bash">keycode 9 = NoSymbol
+</code></pre>
+<p>Now, apply the change:</p>
+<pre><code class="lang-bash">xmodmap ~/swap_keys.map
+</code></pre>
+<p>The <code>Escape</code> key will now do nothing, leaving the victim trapped in whatever program or shell they&#x2019;re trying to exit. This prank is subtle but incredibly effective, especially when paired with other key swaps.</p>
+<h4 id="step-6-making-it-extra-annoying&#x2014;periodic-key-reversion"><strong>Step 6: Making It Extra Annoying&#x2014;Periodic Key Reversion</strong></h4>
+<p>For an added layer of confusion, you can periodically revert the key changes and then reapply them, leaving the victim wondering if their keyboard is glitching out. We&#x2019;ll set up a simple cron job to toggle between the normal and swapped key states every few minutes.</p>
+<p>Create a script called <code>toggle_keys.sh</code>:</p>
+<pre><code class="lang-bash">nano ~/toggle_keys.sh
+</code></pre>
+<p>Inside the script, add the following:</p>
+<pre><code class="lang-bash"><span class="hljs-meta">#!/bin/bash
+</span>
+<span class="hljs-comment"># Check if keys are swapped</span>
+<span class="hljs-keyword">if</span> xmodmap -pke | grep -q <span class="hljs-string">&quot;keycode 38 = S&quot;</span>; <span class="hljs-keyword">then</span>
+    <span class="hljs-comment"># Revert to normal</span>
+    xmodmap <span class="hljs-_">-e</span> <span class="hljs-string">&quot;keycode 38 = A&quot;</span>
+    xmodmap <span class="hljs-_">-e</span> <span class="hljs-string">&quot;keycode 39 = S&quot;</span>
+<span class="hljs-keyword">else</span>
+    <span class="hljs-comment"># Swap keys</span>
+    xmodmap ~/swap_keys.map
+<span class="hljs-keyword">fi</span>
+</code></pre>
+<p>Make the script executable:</p>
+<pre><code class="lang-bash">chmod +x ~/toggle_keys.sh
+</code></pre>
+<p>Now, set up a cron job to run this script every 5 minutes:</p>
+<pre><code class="lang-bash">crontab <span class="hljs-_">-e</span>
+</code></pre>
+<p>Add the following line to the cron file:</p>
+<pre><code class="lang-bash">*/5 * * * * ~/toggle_keys.sh
+</code></pre>
+<p>This will toggle the key swap every 5 minutes, leaving your target completely disoriented. One moment the keyboard will behave normally, and the next it will be back to chaos. The victim won&#x2019;t know if it&#x2019;s a bug, a hardware issue, or pure madness.</p>
+<h4 id="step-7-restoring-the-keyboard-to-normal"><strong>Step 7: Restoring the Keyboard to Normal</strong></h4>
+<p>As always, you need to be able to restore order once the prank has run its course. To revert the keyboard to normal, simply remove or comment out the key remapping lines from the <code>xmodmap</code> file:</p>
+<pre><code class="lang-bash">nano ~/swap_keys.map
+<span class="hljs-comment"># Comment out or delete the key remapping lines</span>
+</code></pre>
+<p>Then, run the following command to revert the changes:</p>
+<pre><code class="lang-bash">xmodmap <span class="hljs-_">-e</span> <span class="hljs-string">&quot;keycode 38 = A&quot;</span>
+xmodmap <span class="hljs-_">-e</span> <span class="hljs-string">&quot;keycode 39 = S&quot;</span>
+</code></pre>
+<p>Also, don&#x2019;t forget to remove the cron job if you&#x2019;ve set it up:</p>
+<pre><code class="lang-bash">crontab <span class="hljs-_">-e</span>
+<span class="hljs-comment"># Remove the toggle_keys.sh entry</span>
+</code></pre>
+<p>After this, the keyboard will behave normally again, and your victim can breathe a sigh of relief&#x2014;until your next prank, of course.</p>
+<h4 id="pro-tips-for-maximum-frustration"><strong>Pro Tips for Maximum Frustration</strong></h4>
+<ul>
+<li><p><strong>Swap Modifier Keys</strong>: Swapping the <code>Ctrl</code> and <code>Alt</code> keys will create chaos in shortcuts, especially for users who rely heavily on <code>Ctrl+C</code>, <code>Ctrl+V</code>, and other combinations.</p>
+</li>
+<li><p><strong>Invisible Key Swaps</strong>: Swap less noticeable keys, like <code>,</code> and <code>.</code> or <code>/</code> and <code>-</code>. This will lead to subtle but constant mistakes in typing, driving the victim crazy as they repeatedly hit the wrong key.</p>
+</li>
+<li><p><strong>Random Key Behavior</strong>: Create a script that changes key mappings randomly every few seconds, turning typing into a completely unpredictable experience.</p>
+</li>
+</ul>
+<h4 id="why-this-works"><strong>Why This Works</strong></h4>
+<p>The beauty of the <strong>Keyboard Swap Sabotage</strong> prank is in its subtlety. The victim will first think they&#x2019;re making innocent typing mistakes, only to slowly realize that their keyboard is no longer under their control. The confusion builds as they try to figure out why their muscle memory has betrayed them. It&#x2019;s the perfect blend of technical trickery and psychological frustration.</p>
+<h4 id="in-conclusion"><strong>In Conclusion</strong></h4>
+<p>The <strong>Keyboard Swap Sabotage</strong> is a classic prank that delivers frustration in a wonderfully subtle way. By swapping or disabling keys, you turn the user&#x2019;s most trusted tool into a source of confusion and chaos. And, of course, it&#x2019;s easy to reverse, ensuring that the prank leaves no permanent damage&#x2014;just a few shattered nerves.</p>
+<p>Next up, we&#x2019;ll take things to a whole new level of unpredictability with <strong>Chapter 8: Bash Roulette</strong>&#x2014;where every command becomes a gamble.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter6.html" class="navigation navigation-prev " aria-label="Previous page: 6. Alias Apocalypse">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter8.html" class="navigation navigation-next " aria-label="Next page: 8. Bash Roulette">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"7. Keyboard Swap Sabotage","level":"1.9","depth":1,"next":{"title":"8. Bash Roulette","level":"1.10","depth":1,"path":"chapter8.md","ref":"chapter8.md","articles":[]},"previous":{"title":"6. Alias Apocalypse","level":"1.8","depth":1,"path":"chapter6.md","ref":"chapter6.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter7.md","mtime":"2024-10-24T10:33:35.517Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-10-24T10:44:49.165Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

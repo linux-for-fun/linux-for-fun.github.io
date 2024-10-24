@@ -1,0 +1,565 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>8. Bash Roulette · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter9.html" />
+    
+    
+    <link rel="prev" href="chapter7.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    0. Welcome to the Chaos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    1. Login Loop of Doom (But Not Really)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter2.html">
+            
+                <a href="chapter2.html">
+            
+                    
+                    2. The Phantom Printer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter3.html">
+            
+                <a href="chapter3.html">
+            
+                    
+                    3. Terminal Games — The Real Ones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chapter4.html">
+            
+                <a href="chapter4.html">
+            
+                    
+                    4. The Talking Terminal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="chapter5.html">
+            
+                <a href="chapter5.html">
+            
+                    
+                    5. Sudon't Do That!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="chapter6.html">
+            
+                <a href="chapter6.html">
+            
+                    
+                    6. Alias Apocalypse
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="chapter7.html">
+            
+                <a href="chapter7.html">
+            
+                    
+                    7. Keyboard Swap Sabotage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="chapter8.html">
+            
+                <a href="chapter8.html">
+            
+                    
+                    8. Bash Roulette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="chapter9.html">
+            
+                <a href="chapter9.html">
+            
+                    
+                    9. Fortune’s Fool*
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="chapter10.html">
+            
+                <a href="chapter10.html">
+            
+                    
+                    10. The Mystery Background
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="chapter11.html">
+            
+                <a href="chapter11.html">
+            
+                    
+                    11. Shell Shenanigans — Fake Error Messages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="chapter12.html">
+            
+                <a href="chapter12.html">
+            
+                    
+                    12. The Final Laugh
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >8. Bash Roulette</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="chapter-8-bash-roulette"><strong>Chapter 8: Bash Roulette</strong></h3>
+<p>Ah, the terminal&#x2014;so reliable, so predictable. You type a command, it does what you expect. But what if every time you typed something, you weren&#x2019;t quite sure what would happen? Maybe your command works as intended. Maybe it launches a game of <strong>Tetris</strong> instead. Or, perhaps, it just prints a cryptic message or plays a sound. Welcome to <strong>Bash Roulette</strong>, where every command is a gamble, and the terminal is no longer your obedient servant but a mischievous, unpredictable trickster.</p>
+<p>In this chapter, we&#x2019;ll craft a script that injects randomness into the user&#x2019;s terminal experience, turning ordinary commands into a game of chance. Let the chaos begin.</p>
+<h4 id="step-1-setting-up-the-bash-roulette-script"><strong>Step 1: Setting Up the Bash Roulette Script</strong></h4>
+<p>First, we need to create a script that will randomly decide whether a command runs normally or triggers a prank. This will be the heart of <strong>Bash Roulette</strong>. Let&#x2019;s start by writing a simple version that randomly chooses between executing the user&#x2019;s command and launching something unexpected.</p>
+<p>Create a new file called <code>bash_roulette.sh</code>:</p>
+<pre><code class="lang-bash">nano ~/bash_roulette.sh
+</code></pre>
+<p>Inside this script, we&#x2019;ll define the roulette behavior. For now, let&#x2019;s keep it simple: when the user runs a command, the script will randomly decide whether to execute it normally or trigger a surprise.</p>
+<p>Here&#x2019;s the basic version:</p>
+<pre><code class="lang-bash"><span class="hljs-meta">#!/bin/bash
+</span>
+<span class="hljs-comment"># Define the random chance (1 in 5)</span>
+roulette=$((RANDOM % 5))
+
+<span class="hljs-keyword">if</span> [ <span class="hljs-variable">$roulette</span> <span class="hljs-_">-eq</span> 0 ]; <span class="hljs-keyword">then</span>
+    <span class="hljs-comment"># Surprise! Launch a game of Tetris</span>
+    <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;You hit the jackpot! Playing Tetris instead.&quot;</span>
+    tint
+<span class="hljs-keyword">else</span>
+    <span class="hljs-comment"># Otherwise, run the command as normal</span>
+    <span class="hljs-string">&quot;<span class="hljs-variable">$@</span>&quot;</span>
+<span class="hljs-keyword">fi</span>
+</code></pre>
+<p>This script gives the user a 1 in 5 chance of their command being hijacked to launch <strong>Tetris</strong>. The other four times, their command will run normally. Save the file and make it executable:</p>
+<pre><code class="lang-bash">chmod +x ~/bash_roulette.sh
+</code></pre>
+<h4 id="step-2-making-the-script-affect-all-commands"><strong>Step 2: Making the Script Affect All Commands</strong></h4>
+<p>Now that we&#x2019;ve got the basic roulette behavior, let&#x2019;s make sure it applies to all commands the user runs. We can do this by modifying their <code>.bashrc</code> file to alias every command to pass through our <code>bash_roulette.sh</code> script.</p>
+<p>Open the <code>.bashrc</code> file:</p>
+<pre><code class="lang-bash">nano ~/.bashrc
+</code></pre>
+<p>Add the following line to alias all commands through the roulette script:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">alias</span> *=<span class="hljs-string">&apos;~/bash_roulette.sh &quot;$@&quot;&apos;</span>
+</code></pre>
+<p>This ensures that every command the user types&#x2014;whether it&#x2019;s <code>ls</code>, <code>cd</code>, or <code>cat</code>&#x2014;gets passed through <strong>Bash Roulette</strong>. Every action becomes a gamble.</p>
+<h4 id="step-3-expanding-the-prank-possibilities"><strong>Step 3: Expanding the Prank Possibilities</strong></h4>
+<p>Why stop at <strong>Tetris</strong>? Let&#x2019;s expand the list of possible pranks, so that each command could trigger a variety of surprises. Here&#x2019;s an updated version of the script with a few more mischievous options:</p>
+<pre><code class="lang-bash"><span class="hljs-meta">#!/bin/bash
+</span>
+<span class="hljs-comment"># Define the random chance (1 in 5)</span>
+roulette=$((RANDOM % 5))
+
+<span class="hljs-keyword">if</span> [ <span class="hljs-variable">$roulette</span> <span class="hljs-_">-eq</span> 0 ]; <span class="hljs-keyword">then</span>
+    <span class="hljs-comment"># Randomly choose a prank to play</span>
+    prank=$((RANDOM % 4))
+
+    <span class="hljs-keyword">case</span> <span class="hljs-variable">$prank</span> <span class="hljs-keyword">in</span>
+        0)
+            <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Surprise! Launching Tetris.&quot;</span>
+            tint
+            ;;
+        1)
+            <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Whoa, slow down! Rebooting your terminal...&quot;</span>
+            sleep 3
+            clear
+            ;;
+        2)
+            <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Random wisdom for you: &quot;</span>
+            fortune
+            ;;
+        3)
+            <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Beware... you have angered the terminal.&quot;</span>
+            espeak <span class="hljs-string">&quot;You have angered the terminal.&quot;</span>
+            ;;
+    <span class="hljs-keyword">esac</span>
+<span class="hljs-keyword">else</span>
+    <span class="hljs-comment"># Run the command normally</span>
+    <span class="hljs-string">&quot;<span class="hljs-variable">$@</span>&quot;</span>
+<span class="hljs-keyword">fi</span>
+</code></pre>
+<p>Now, every time a command is run, the user faces a 1 in 5 chance of triggering one of the following pranks:</p>
+<ul>
+<li><strong>Tetris</strong>: Launches the game <strong>Tetris</strong>.</li>
+<li><strong>Terminal reboot</strong>: Clears the terminal, giving the illusion that it&#x2019;s rebooting.</li>
+<li><strong>Fortune</strong>: Displays a random fortune using the <code>fortune</code> command.</li>
+<li><strong>Angry terminal</strong>: The terminal talks back with an ominous message using <code>espeak</code>.</li>
+</ul>
+<p>You can, of course, add as many different pranks as you want by expanding the <code>case</code> block with more creative ideas.</p>
+<h4 id="step-4-adding-sound-effects-for-extra-fun"><strong>Step 4: Adding Sound Effects for Extra Fun</strong></h4>
+<p>To add another layer of confusion, let&#x2019;s introduce sound effects using the <code>aplay</code> or <code>espeak</code> commands. This will make the terminal not only unpredictable but also noisy. For example, you can make the terminal play a creepy sound when a command fails the roulette.</p>
+<p>Let&#x2019;s add this to the script:</p>
+<pre><code class="lang-bash"><span class="hljs-meta">#!/bin/bash
+</span>
+<span class="hljs-comment"># Define the random chance (1 in 5)</span>
+roulette=$((RANDOM % 5))
+
+<span class="hljs-keyword">if</span> [ <span class="hljs-variable">$roulette</span> <span class="hljs-_">-eq</span> 0 ]; <span class="hljs-keyword">then</span>
+    <span class="hljs-comment"># Randomly choose a prank</span>
+    prank=$((RANDOM % 5))
+
+    <span class="hljs-keyword">case</span> <span class="hljs-variable">$prank</span> <span class="hljs-keyword">in</span>
+        0)
+            <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Surprise! Launching Tetris.&quot;</span>
+            tint
+            ;;
+        1)
+            <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Rebooting terminal... or is it?&quot;</span>
+            sleep 3
+            clear
+            ;;
+        2)
+            <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Here&#x2019;s some wisdom: &quot;</span>
+            fortune
+            ;;
+        3)
+            <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Beware... you have angered the terminal.&quot;</span>
+            espeak <span class="hljs-string">&quot;You have angered the terminal.&quot;</span>
+            ;;
+        4)
+            <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Playing a sound just for fun.&quot;</span>
+            aplay /usr/share/sounds/alsa/Front_Center.wav
+            ;;
+    <span class="hljs-keyword">esac</span>
+<span class="hljs-keyword">else</span>
+    <span class="hljs-comment"># Run the command normally</span>
+    <span class="hljs-string">&quot;<span class="hljs-variable">$@</span>&quot;</span>
+<span class="hljs-keyword">fi</span>
+</code></pre>
+<p>Now, one of the pranks will play a sound using the <code>aplay</code> command, making the terminal even more unpredictable and annoying.</p>
+<h4 id="step-5-cron-jobs-for-periodic-chaos"><strong>Step 5: Cron Jobs for Periodic Chaos</strong></h4>
+<p>Want to add another layer of randomness? Set up a cron job that periodically triggers <strong>Bash Roulette</strong> at random times, even when the user isn&#x2019;t actively typing commands.</p>
+<p>Create a new cron job like this:</p>
+<pre><code class="lang-bash">crontab <span class="hljs-_">-e</span>
+</code></pre>
+<p>Add the following line to execute the script every 15 minutes:</p>
+<pre><code class="lang-bash">*/15 * * * * ~/bash_roulette.sh <span class="hljs-string">&quot;echo Random terminal event!&quot;</span>
+</code></pre>
+<p>Now, every 15 minutes, the script will run on its own, surprising the user with random events. They&#x2019;ll be sitting there, minding their own business, when suddenly their terminal talks back, clears itself, or plays a sound. Pure chaos.</p>
+<h4 id="step-6-escaping-the-roulette"><strong>Step 6: Escaping the Roulette</strong></h4>
+<p>Eventually, your victim will want to escape the madness. To disable the roulette and restore their terminal to normal, they&#x2019;ll need to remove the alias from the <code>.bashrc</code> file.</p>
+<p>Here&#x2019;s how to disable the prank:</p>
+<ol>
+<li>Open the <code>.bashrc</code> file:</li>
+</ol>
+<pre><code class="lang-bash">nano ~/.bashrc
+</code></pre>
+<ol>
+<li>Remove or comment out the alias line:</li>
+</ol>
+<pre><code class="lang-bash"><span class="hljs-comment"># alias *=&apos;~/bash_roulette.sh &quot;$@&quot;&apos;</span>
+</code></pre>
+<ol>
+<li>Save the file and reload the shell:</li>
+</ol>
+<pre><code class="lang-bash"><span class="hljs-built_in">source</span> ~/.bashrc
+</code></pre>
+<p>Once the alias is removed, the terminal will return to normal behavior, and commands will run as expected again.</p>
+<h4 id="step-7-making-it-even-more-evil"><strong>Step 7: Making It Even More Evil</strong></h4>
+<p>If you want to make <strong>Bash Roulette</strong> truly diabolical, here are a few extra ideas to take the prank to the next level:</p>
+<ul>
+<li><p><strong>Silent Sabotage</strong>: Instead of giving clear messages when a prank triggers, make some pranks silent, so the user doesn&#x2019;t even know something weird happened until later (e.g., secretly editing files or changing directory locations).</p>
+</li>
+<li><p><strong>File Corruption Warnings</strong>: Add a prank that pretends to corrupt important files. For example, you can display a message like, &#x201C;Warning: Critical system file deleted.&#x201D; Of course, it won&#x2019;t actually delete anything, but the user won&#x2019;t know that.</p>
+</li>
+<li><p><strong>Command History Editing</strong>: Create a prank that modifies the user&#x2019;s command history, so they can&#x2019;t see the commands they actually typed, adding another layer of paranoia.</p>
+</li>
+</ul>
+<h4 id="why-this-works"><strong>Why This Works</strong></h4>
+<p>The beauty of <strong>Bash Roulette</strong> is in its randomness. The unpredictability makes it unsettling for the victim, as they never know what will happen when they execute a command. One moment it&#x2019;s business as usual, the next they&#x2019;re playing <strong>Tetris</strong> or hearing ominous sounds from their terminal. It turns the most mundane actions into a source of anxiety, and because it&#x2019;s all done through harmless pranks, the user can&#x2019;t help but laugh once they figure out what&#x2019;s going on.</p>
+<h4 id="in-conclusion"><strong>In Conclusion</strong></h4>
+<p><strong>Bash Roulette</strong> is a perfect blend of technical trickery and psychological games. By introducing randomness into the terminal experience, you transform the user&#x2019;s interaction with the system into a high-stakes game of chance. And as with all great pranks, it&#x2019;s easily reversible, ensuring that the fun leaves no lasting damage&#x2014;just a good laugh and a confused victim.</p>
+<p>Next up, we&#x2019;ll dive into another sneaky way to mess with your victim&#x2019;s head: <strong>Chapter 9: Fortune&#x2019;s Fool</strong>, where we use the <code>fortune</code> command to randomly insert snarky, confusing, or downright cryptic messages into their terminal sessions.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter7.html" class="navigation navigation-prev " aria-label="Previous page: 7. Keyboard Swap Sabotage">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter9.html" class="navigation navigation-next " aria-label="Next page: 9. Fortune’s Fool*">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"8. Bash Roulette","level":"1.10","depth":1,"next":{"title":"9. Fortune’s Fool*","level":"1.11","depth":1,"path":"chapter9.md","ref":"chapter9.md","articles":[]},"previous":{"title":"7. Keyboard Swap Sabotage","level":"1.9","depth":1,"path":"chapter7.md","ref":"chapter7.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter8.md","mtime":"2024-10-24T10:36:32.057Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-10-24T10:44:49.165Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
